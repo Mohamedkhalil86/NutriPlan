@@ -1,0 +1,718 @@
+.loading {
+  display:none
+}
+
+/* =========================
+   MEAL CATEGORIES
+========================= */
+
+#meal-categories-section {
+  width: 100%;
+  padding: 26px 34px 10px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.meal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.meal-header h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.meal-header p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.view-all-btn {
+  border: 0;
+  background: transparent;
+  color: #009c72;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 0;
+}
+
+.view-all-btn i {
+  font-size: 12px;
+}
+
+.view-all-btn:hover {
+  color: #007f5d;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+#categories-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px 15px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.category-card {
+  
+  height: 60px;   
+  padding: 10px 15px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  padding: 15px;
+
+  border-radius: 15px;
+  border: 1px solid;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.category-icon {
+  width: 10px;
+  height: 40px;
+
+  flex: 0 0 46px;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.category-card h3 {
+  margin: 0 0 0 12px;
+
+  color: #111827;
+
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* ==================================================
+   BEEF
+================================================== */
+
+.category-card.beef {
+  background: #fef1f2;
+  border-color: #ffc9c9;
+}
+
+.category-card.beef .category-icon {
+  background: #ff4d64;
+}
+
+
+/* ==================================================
+   CHICKEN
+================================================== */
+
+.category-card.chicken {
+  background: #fff9eb;
+  border-color: #fee685;
+}
+
+.category-card.chicken .category-icon {
+  background: #ff9800;
+}
+
+
+/* ==================================================
+   DESSERT
+================================================== */
+
+.category-card.dessert {
+  background: #fef2f7;
+  border-color: #fccfe8;
+}
+
+.category-card.dessert .category-icon {
+  background: #ff3f8f;
+}
+
+
+/* ==================================================
+   LAMB
+================================================== */
+
+.category-card.lamb {
+  background: #fff8ec;
+  border-color: #ffd6a7;
+}
+
+.category-card.lamb .category-icon {
+  background: #ff9000;
+}
+
+
+/* ==================================================
+   MISCELLANEOUS
+================================================== */
+
+.category-card.miscellaneous {
+  background: #f8fafb;
+  border-color: #e2e8f0;
+}
+
+.category-card.miscellaneous .category-icon {
+  background: #8795aa;
+}
+
+
+/* ==================================================
+   PASTA
+================================================== */
+
+.category-card.pasta {
+  background: #fefbe9;
+  border-color: #fff085;
+}
+
+.category-card.pasta .category-icon {
+  background: #ffb800;
+}
+
+
+/* ==================================================
+   PORK
+================================================== */
+
+.category-card.pork {
+  background: #fef1f2;
+  border-color: #ffc7cc;
+}
+
+.category-card.pork .category-icon {
+  background: #ff5268;
+}
+
+
+/* ==================================================
+   SEAFOOD
+================================================== */
+
+.category-card.seafood {
+  background: #edfbff;
+  border-color: #9de3f7;
+}
+
+.category-card.seafood .category-icon {
+  background: #08a9ee;
+}
+
+
+/* ==================================================
+   SIDE
+================================================== */
+
+.category-card.side {
+  background: #effdf4;
+  border-color: #a8edc8;
+}
+
+.category-card.side .category-icon {
+  background: #00c984;
+}
+
+
+/* ==================================================
+   STARTER
+================================================== */
+
+.category-card.starter {
+  background: #effdfc;
+  border-color: #8debe7;
+}
+
+.category-card.starter .category-icon {
+  background: #09c3c7;
+}
+
+
+/* ==================================================
+   VEGAN
+================================================== */
+
+.category-card.vegan {
+  background: #edfcf4;
+  border-color: #a9edc9;
+}
+
+.category-card.vegan .category-icon {
+  background: #00c984;
+}
+
+
+/* ==================================================
+   VEGETARIAN
+================================================== */
+
+.category-card.vegetarian {
+  background: #f4feec;
+  border-color: #c9ed7a;
+}
+
+.category-card.vegetarian .category-icon {
+  background: #73d516;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  #categories-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  #categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+
+  #meal-categories-section {
+    padding: 20px 16px;
+  }
+
+  #categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meal-header h2 {
+    font-size: 22px;
+  }
+
+  .meal-header p {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  #categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .view-all-btn {
+    font-size: 14px;
+  }
+
+}
+
+
+/* خلفية النافذة المعتمة مع التغبيش */
+.custom-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.custom-modal-overlay.hidden {
+  display: none !important;
+}
+
+/* الكارت الرئيسي للنافذة */
+.custom-modal-card {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+  overflow-y: auto;
+  font-family: inherit;
+}
+
+/* شريط التمرير */
+.custom-modal-card::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-modal-card::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+/* زر الإغلاق العلوي (X) */
+.custom-close-x {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  font-size: 18px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.custom-close-x:hover {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+/* قسم معلومات المنتج بالأعلى */
+.custom-product-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-right: 24px;
+}
+
+.custom-img-box {
+  width: 90px;
+  height: 90px;
+  background-color: #f9fafb;
+  border: 1px solid #f3f4f6;
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.custom-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.custom-product-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.custom-brand {
+  font-size: 11px;
+  font-weight: 700;
+  color: #047857;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.custom-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 2px 0;
+  line-height: 1.3;
+}
+
+.custom-qty {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+/* الـ Badges (Nutri-score & NOVA) */
+.custom-badges-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.custom-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 1px solid;
+}
+.custom-badge.nutri {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+}
+.custom-badge.nova {
+  background-color: #fff7ed;
+  border-color: #ffedd5;
+}
+
+.badge-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge-icon.red { background-color: #dc2626; }
+.badge-icon.orange { background-color: #ea580c; }
+
+.badge-texts .badge-title {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+.custom-badge.nutri .badge-title { color: #b91c1c; }
+.custom-badge.nova .badge-title { color: #c2410c; }
+
+.badge-texts .badge-desc {
+  font-size: 10px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* صندوق حقائق الغذاء (Nutrition Facts) */
+.custom-nutrition-box {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nutrition-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #166534;
+}
+.green-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #16a34a;
+  border-radius: 50%;
+}
+.nutrition-header span.per {
+  font-weight: 400;
+  color: #6b7280;
+  font-size: 11px;
+}
+
+.calories-container {
+  text-align: center;
+}
+.calories-number {
+  font-size: 30px;
+  font-weight: 900;
+  color: #111827;
+  line-height: 1;
+}
+.calories-label {
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* صف الماكروز والأشرطة */
+.macros-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #dcfce7;
+}
+
+.macro-item .macro-bar-bg {
+  width: 100%;
+  background-color: #e5e7eb;
+  height: 4px;
+  border-radius: 99px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+.macro-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+}
+.macro-bar-fill.emerald { background-color: #10b981; }
+.macro-bar-fill.blue { background-color: #3b82f6; }
+.macro-bar-fill.purple { background-color: #a855f7; }
+.macro-bar-fill.orange { background-color: #f97316; }
+
+.macro-value {
+  font-size: 12px;
+  font-weight: 700;
+}
+.macro-value.emerald { color: #047857; }
+.macro-value.blue { color: #1d4ed8; }
+.macro-value.purple { color: #7e22ce; }
+.macro-value.orange { color: #c2410c; }
+
+.macro-label {
+  font-size: 10px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* العناصر الفرعية بالأسفل (Saturated Fat, Fiber, Salt) */
+.sub-nutrients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #dcfce7;
+  font-size: 11px;
+}
+.sub-item .sub-val {
+  font-weight: 700;
+  color: #1f2937;
+}
+.sub-item .sub-lbl {
+  font-size: 10px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* صندوق المكونات */
+.custom-ingredients-box {
+  background-color: #f9fafb;
+  border: 1px solid #f3f4f6;
+  border-radius: 16px;
+  padding: 14px;
+}
+.ingredients-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.ingredients-title i {
+  color: #9ca3af;
+  font-size: 12px;
+}
+.ingredients-text {
+  font-size: 11px;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* الأزرار السفلية المطابقة للصورة الثانية تماماً */
+.custom-actions-row {
+  display: flex;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.btn-log-food {
+  flex: 1;
+  background-color: #00a650;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.btn-log-food:hover {
+  background-color: #008f43;
+}
+
+.btn-modal-close {
+  flex: 1;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+.btn-modal-close:hover {
+  background-color: #e5e7eb;
+}
