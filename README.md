@@ -2,7 +2,7 @@
 
 A meals and recipes web app. Browse recipes by cuisine and meal type, search by name or ingredient, and track food logs.
 
-**Live demo:** https://mohamedkhalil86.github.io/Meals-Recipes/
+**Live demo:** https://mohamedkhalil86.github.io/NutriPlan/
 
 Built as a Route Academy front-end training project: the HTML/CSS design was provided as a starter, and I implemented the JavaScript functionality and API integration.
 
